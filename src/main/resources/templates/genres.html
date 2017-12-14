@@ -1,0 +1,19 @@
+<!DOCTYPE HTML>
+
+<html xmlns:th ="http://www.thymeleaf.org">
+
+<head>
+	<title>Book Genres</title>
+
+</head>
+<body>
+	<h3>Our Genres</h3>
+			
+			
+			<div th:each="genre: ${genres}"> <!-- for each genre make a div -->
+			<h2 th:text="${genre.genre}"></h2>
+		</div>
+		
+		
+</body>
+</html>
